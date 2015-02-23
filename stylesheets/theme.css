@@ -578,6 +578,8 @@ body {
   padding: 20px 20px 18px;
   margin-top: 0;
   margin-bottom: 0;
+  width: 210px;
+  height: auto;
 }
 #masthead .brand a {
   font-style: normal;
@@ -2469,6 +2471,14 @@ ul.inline li {
   .super-hero-unit figure figcaption {
     margin-top: -12px;
   }
+
+    #masthead .brand {
+        width: 190px;
+    }
+
+    .navbar-inner {
+        min-height: 80px;
+    }
 }
 /* - 9.7 - Retina displays - */
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
