@@ -578,9 +578,14 @@ body {
   padding: 20px 20px 18px;
   margin-top: 0;
   margin-bottom: 0;
-  width: 210px;
-  height: auto;
+
 }
+
+#masthead .brand img {
+    width: 210px;
+    height: 47px;
+}
+
 #masthead .brand a {
   font-style: normal;
 }
@@ -2423,6 +2428,12 @@ ul.inline li {
   .media-comment .comment-reply {
     float: right;
   }
+
+    #masthead .brand img {
+        width: 180px;
+        height: 40px;
+    }
+
 }
 /* - 9.6 Up to portrait phone  - */
 @media (max-width: 320px) {
@@ -2472,8 +2483,9 @@ ul.inline li {
     margin-top: -12px;
   }
 
-    #masthead .brand {
-        width: 190px;
+    #masthead .brand img {
+        width: 180px;
+        height: 40px;
     }
 
     .navbar-inner {
