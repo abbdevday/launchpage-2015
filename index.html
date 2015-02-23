@@ -26,6 +26,11 @@
   <link href="stylesheets/theme.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href="stylesheets/fonts.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href="stylesheets/jquery.countdown.css" media="screen" rel="stylesheet" type="text/css"/>
+  <style>
+    #defaultCountdown {
+
+    }
+  </style>
 </head>
 <body>
 <div class="wrapper">
@@ -60,9 +65,7 @@
     <section class="section section-padded">
       <div class="container-fluid">
         <div class="section-header">
-          <h1>Are
-            <small class="light">you ready?</small>
-          </h1>
+          <h1 id="defaultCountdown"></h1>
         </div>
         <p class="lead text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim malesuada sapien malesuada gravida.
@@ -77,7 +80,7 @@
           <h1>Call <small class="light">for papers</small></h1>
         </div>
         <div class="row-fluid">
-
+          <!--<div id="defaultCountdown"></div>-->
         </div>
       </div>
 
@@ -157,7 +160,7 @@
 <script src="javascripts/jquery.fancybox-media.js" type="text/javascript"></script>
 <script src="javascripts/script.js" type="text/javascript"></script>
 <script src="javascripts/jquery.plugin.min.js" type="text/javascript"></script>
-<script src="javascripts/jquery.countdown.min.js" type="text/javascript"></script>
+<script src="javascripts/jquery.countdown.js" type="text/javascript"></script>
 <script type="text/javascript">
   if (typeof gaJsHost == 'undefined') {
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -170,4 +173,14 @@
     pageTracker._trackPageview();
   } catch (err) {
   }</script>
+<script type="text/javascript">
+  $(function () {
+    var theDay = new Date(2015, 8, 16, 8, 0, 0);
+    $('#defaultCountdown').countdown({
+      until: theDay,
+      labels: ['Y', 'M', 'W', 'D', 'H', 'M', 'S'],
+      labels1: ['Y', 'M', 'W', 'D', 'H', 'M', 'S']
+    });
+  });
+</script>
 </body>
