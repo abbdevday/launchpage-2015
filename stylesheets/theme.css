@@ -387,6 +387,11 @@ hr.invisible {
   text-transform: uppercase;
 }
 
+.super span {
+    font-size: 36px;
+    display: block;
+}
+
 .hyper {
   font-size: 240px;
   font-weight: 900;
@@ -1681,7 +1686,7 @@ html[xmlns] .slides {
   width: 100%;
   top: 50%;
   left: 0;
-  margin-top: -36px;
+  margin-top: -48px;
   background: none;
   padding: 0;
 }
@@ -2194,6 +2199,10 @@ ul.inline li {
     font-size: 48px;
   }
 
+  .super span {
+      font-size: 24px;
+  }
+
   .hyper {
     font-size: 70px;
   }
@@ -2251,8 +2260,8 @@ ul.inline li {
   .super-hero-unit figure {
     min-height: 70px;
   }
-  .super-hero-unit figcaption {
-    margin-top: -24px;
+  .super-hero-unit figure figcaption {
+    margin-top: -36px;
   }
 
   /* -- 9.4.5 Flexslider -- */
@@ -2330,7 +2339,10 @@ ul.inline li {
   /* -- 9.5.1 Typography -- */
   .super {
     font-size: 36px;
-    line-superheight: 1em;
+  }
+
+  .super span {
+      font-size: 18px;
   }
 
   .hyper {
@@ -2340,7 +2352,7 @@ ul.inline li {
 
   /* -- 9.5.2 Layout -- */
   .super-hero-unit figure figcaption {
-    margin-top: -16px;
+    margin-top: -24px;
   }
 
   /* -- 9.5.3 Map -- */
@@ -2474,13 +2486,17 @@ ul.inline li {
     line-height: 1;
   }
 
+  .super span {
+      font-size: 12px;
+  }
+
   .hyper {
     font-size: 36px;
   }
 
   /* -- 9.6.2 Super hero unit -- */
   .super-hero-unit figure figcaption {
-    margin-top: -12px;
+    margin-top: -16px;
   }
 
     #masthead .brand img {
